@@ -1,0 +1,36 @@
+modLoader="javafml"
+loaderVersion="${loader_version_range}"
+license="MIT License"
+issueTrackerURL="https://github.com/WithoutAMods/${mod_base_name}/issues"
+
+[[mods]]
+    modId="${mod_id}"
+    version="${minecraft_version}-${mod_version}"
+    displayName="${mod_name}"
+    #updateJSONURL="https://change.me.example.invalid/updates.json"
+    displayURL="https://github.com/WithoutAMods/${mod_base_name}"
+    #logoFile="examplemod.png"
+    #credits=""
+    authors="${mod_authors}"
+    description='''${mod_description}'''
+
+[[dependencies.${mod_id}]]
+    modId="forge"
+    mandatory=true
+    versionRange="${forge_version_range}"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.${mod_id}]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="${minecraft_version_range}"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.${mod_id}]]
+    modId="withoutalib"
+    mandatory=true
+    versionRange="[${withoutalib_version},)"
+    ordering="NONE"
+    side="BOTH"
