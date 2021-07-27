@@ -8,8 +8,8 @@ import org.apache.logging.log4j.Logger;
 @Mod(ExampleMod.MODID)
 @Mod.EventBusSubscriber
 public class ExampleMod {
-    public static final String MODID = "examplemod";
-    public static final Logger LOGGER = LogManager.getLogger();
-
-    public ExampleMod() {}
+	public static final String MODID = "examplemod";
+	public static final Logger LOGGER = LogManager.getLogger();
+	
+	public ExampleMod() {}
 }
